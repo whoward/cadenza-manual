@@ -1,0 +1,36 @@
+{% extends "partials/base.cadenza" %}
+{% block title %}Try Cadenza Online{% endblock %}
+{% block head %}
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   <script src="markitup/jquery.markitup.js"></script>
+   <script src="markitup/sets/html/set.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="markitup/skins/markitup/style.css" />
+   <link rel="stylesheet" type="text/css" href="markitup/sets/html/style.css" />
+
+   <script type="text/javascript" >
+      $(document).ready(function() {
+         $("textarea[name=template]").markItUp(mySettings);
+      });
+   </script>
+{% endblock %}
+{% block content %}
+   <h1>Try Cadenza Online</h1>
+
+   <section>
+      <form action="/render" method="post" target="result">
+         <label for='template'>Template:</label>
+         <textarea name='template'></textarea>
+
+         <label for='context'>Context (give a properly formatted JSON string)</label>
+         <textarea name='context'></textarea>
+
+         <input type='submit' value='render'/>
+      </form>
+
+      <h3>Result:</h3>
+      <iframe name="result" style="width: 100%; margin: auto; height: 600px">
+         Your browser must support iframes to use this page.
+      </iframe>
+   </section>
+{% endblock %}

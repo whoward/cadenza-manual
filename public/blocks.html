@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadenza: Standard Blocks Reference</title>
+		<script src="resources/modernizr-2.0.6.js"></script>
+		<link type='text/css' rel='stylesheet' href='resources/style.css'/> 
+		<link type='text/css' rel='stylesheet' href='resources/pygments/sublime.css'/>
+		
+	</head>
+	<body>
+		<div id='logo'>Cadenza</div>
+		<div class='ribbon-holder'>
+			<a href='http://www.github.com/whoward/Cadenza' target="_blank"><span>Fork me on GitHub</span></a>
+		</div>
+		<div id='content'>
+  <h1>Standard Blocks Reference</h1>
+
+  <section>
+   <h2>filter</h2>
+   
+   <h3>Parameters</h3>
+   <dl class='parameters'>
+      <dt>filter-name</dt>
+      <dd>The name of the filter that you want to apply</dd>
+   </dl>
+
+   <h3>Description</h3>
+   Applies any filter that is defined on the current context to all the contents
+   of the rendered block.
+
+   <div class='example'><div class="highlight"><pre><span class="cp">{%</span> <span class="k">filter</span> <span class="nf">escape</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">&lt;h1&gt;Some title&lt;/h1&gt;</span>
+<span class="x">&lt;p&gt;Since this is passed through the </span>
+<span class="x">&quot;escape&quot; filter the &lt; and &gt; characters </span>
+<span class="x">will be converted to &amp;gt; and &amp;lt; </span>
+<span class="x">as you would expect them to if </span>
+<span class="x">passed through an inject tag with </span>
+<span class="x">the &quot;escape&quot; filter.&lt;/p&gt;</span>
+<span class="cp">{%</span> <span class="k">end</span> <span class="cp">%}</span><span class="x"></span>
+</pre>
+</div>
+<div class="highlight"><pre><span class="ni">&amp;lt;</span>h1<span class="ni">&amp;gt;</span>Some title<span class="ni">&amp;lt;</span>/h1<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Since this is passed through the 
+<span class="ni">&amp;quot;</span>escape<span class="ni">&amp;quot;</span> filter the <span class="ni">&amp;lt;</span> and <span class="ni">&amp;gt;</span> characters 
+will be converted to <span class="ni">&amp;amp;</span>gt; and <span class="ni">&amp;amp;</span>lt; 
+as you would expect them to if 
+passed through an inject tag with 
+the <span class="ni">&amp;quot;</span>escape<span class="ni">&amp;quot;</span> filter.<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span>
+</pre>
+</div>
+</div>
+</section>
+</div>
+		<nav>
+  <h3>Topics</h3>
+  <ul>
+    <li><a href='index.html'>Home</a></li>
+    <li><a href='syntax.html'>Syntax</a></li>
+    <li><a href='filters.html'>Filter reference</a></li>
+    <li><a href='variables.html'>Variables reference</a></li>
+    <li><a href='blocks.html'>Blocks reference</a></li>
+    <li><a href='reference.html'>Programming Reference</a></li>
+    <li><a href='live.html'>Try Cadenza</a></li>
+  </ul>
+</nav>
+	</body>
+</html>

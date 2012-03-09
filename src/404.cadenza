@@ -1,0 +1,11 @@
+{% extends "partials/base.cadenza" %}
+{% block title %}Page not Found{% endblock %}
+{% block content %}
+   <h1>404 - Not Found</h1>
+
+   <section>
+      <h2>Whoops!</h2>
+      <p>Looks like the page you're looking for doesn't exist.  You can pick a 
+      page to go to from the navigation on the left</p>
+   </section>
+{% endblock %}

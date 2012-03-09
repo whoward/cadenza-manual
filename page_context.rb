@@ -1,6 +1,8 @@
 require 'cgi'
 require 'pygments'
 
+view_directory = File.expand_path("src", File.dirname(__FILE__))
+
 def example(context, template)
   result = "<div class='example'>"
 
@@ -58,12 +60,15 @@ end
 
 whiny_template_loading = true
 
+add_loader Cadenza::FilesystemLoader.new(view_directory)
+add_loader Cadenza::FilesystemLoader.new(File.join view_directory, "iframe")
+
 #
 # This hash is the context that will be used for all the documentation pages
 #
 push({
   'alphabet' => ('A'..'Z').to_a,
-  'now' => Time.now,
+  'now' => lambda {|context| Time.now },
   'nil' => nil,
   'empty_list' => [],
   'name' => 'John Doe',

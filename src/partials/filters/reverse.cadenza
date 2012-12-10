@@ -1,0 +1,11 @@
+<section>
+   <h2>reverse</h2>
+
+   <h3>Parameters</h3>
+   <tt>None</tt>
+
+   <h3>Description</h3>
+   Reverses the input string or collection 
+   
+   {{ rendering_example "partials/filters/examples/reverse.cadenza" }}
+</section>

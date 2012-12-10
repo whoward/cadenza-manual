@@ -1,7 +1,6 @@
 {% extends "partials/base.cadenza" %}
 {% block title %}Try Cadenza Online{% endblock %}
 {% block head %}
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
    <script src="markitup/jquery.markitup.js"></script>
    <script src="markitup/sets/html/set.js"></script>
 

@@ -1,5 +1,10 @@
 {% extends "partials/base.cadenza" %}
 {% block title %}Standard Filters Reference{% endblock %}
+
+{% block head %}
+	<script src="resources/summary.js"></script>
+{% endblock %}
+
 {% block content %}
 	<h1>Standard Filters Reference</h1>
 
@@ -8,11 +13,12 @@
 	{{ render "partials/filters/cut.cadenza" }}
 	{{ render "partials/filters/date.cadenza" }}
 	{{ render "partials/filters/default.cadenza" }}
-	{{ render "partials/filters/escape.cadenza" }}	
+	{{ render "partials/filters/escape.cadenza" }}
 	{{ render "partials/filters/first.cadenza" }}
 	{{ render "partials/filters/join.cadenza" }}
 	{{ render "partials/filters/last.cadenza" }}
-	{{ render "partials/filters/length.cadenza" }}	
+	{{ render "partials/filters/length.cadenza" }}
+	{{ render "partials/filters/reverse.cadenza" }}
 	{{ render "partials/filters/upper.cadenza" }}
 	{{ render "partials/filters/wordwrap.cadenza" }}
 {% endblock %}

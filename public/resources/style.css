@@ -326,7 +326,7 @@ table tbody td:last-child, table thead th:last-child {
 }
 
 table tbody tr:nth-child(even), table thead tr {
-   background-color: #DDD;
+   background-color: whitesmoke;
 }
 
 

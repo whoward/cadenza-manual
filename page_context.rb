@@ -43,7 +43,7 @@ def irb_example(context, template)
 end
 
 def cadenza_example(context, template)
-  highlighted_example context, template, "django"
+  highlighted_example context, template, "html+django"
 end
 
 def rendering_example(context, template)
@@ -51,7 +51,7 @@ def rendering_example(context, template)
   output = context.evaluate_functional_variable("render", [template])
 
   result = "<div class='example'>"
-  result << Pygments.highlight(source, :lexer => "django")
+  result << Pygments.highlight(source, :lexer => "html+django")
   result << Pygments.highlight(output, :lexer => "html")
   result << "</div>"
 

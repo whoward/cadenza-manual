@@ -6,7 +6,7 @@
    divide using the slash symbol <tt>/</tt>.</p>
 
    <p>Arithmetic is evaluated using the standard order of operations for
-   mathematics (Brackets, Divison & Multiplication, Addition & Subtraction).</p>
+   mathematics (Brackets, Divison &amp; Multiplication, Addition &amp; Subtraction).</p>
     
     <p>Here's an example of some arithmetic being used in inject tags:</p>
     {{ rendering_example "partials/syntax/examples/arithmetic1.cadenza"}}

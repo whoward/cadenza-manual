@@ -279,7 +279,6 @@ nav ul li {
 }
 
 nav ul li:hover, nav ul li.active {
-   padding: 4px 9px 4px 9px;
    background: #02AAF2;
    box-shadow: inset 0px 0px 6px #333;
 }

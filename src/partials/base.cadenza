@@ -4,6 +4,11 @@
 		<title>Cadenza: {% block title %}Untitled Page{% endblock %}</title>
 		<script src="resources/modernizr-2.0.6.js"></script>
 		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#content nav a[href=\""+window.location.pathname+"\"]").parent().addClass("active");
+			});
+		</script>
 		<link type='text/css' rel='stylesheet' href='resources/style.css'/> 
 		<link type='text/css' rel='stylesheet' href='resources/pygments/sublime.css'/>
 		{% block head %}{% endblock %}
@@ -14,8 +19,8 @@
 		</div>
 		<div id='content'>
 			<div id='logo'>cadenza <span>template language for ruby</span></div>
+			{{ render 'partials/navigation.cadenza' }}
 			{% block content %}{% endblock %}
 		</div>
-		{{ render 'partials/navigation.cadenza' }}
 	</body>
 </html>

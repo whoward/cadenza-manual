@@ -3,7 +3,7 @@ $(document).ready(function() {
    function nextId() { return ("_id" + nextId.counter++); }
    nextId.counter = 0;
 
-   $("<section/>").attr("id", "summary").insertAfter("#content > h1");
+   $("<section/>").attr("id", "summary").insertAfter("#content > nav");
 
    $("<ul/>").appendTo("#summary");
 

@@ -74,7 +74,12 @@ push({
   'name' => 'John Doe',
   'something_true' => true,
   'something_false' => false,
-  'lorem_ipsum' => "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+  'lorem_ipsum' => "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+  'people' => [
+    {:name => "Will", :age => 26},
+    {:name => "Paul", :age => 33},
+    {:name => "Mike", :age => 42}
+  ]
 })
 
 define_functional_variable :example, &method(:example)

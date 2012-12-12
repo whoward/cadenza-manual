@@ -1,0 +1,16 @@
+<section>
+   <h2>pluck</h2>
+   <tt>also known as <b>map</b> and <b>collect</b>.</tt>
+
+   <h3>Parameters</h3>
+   <dl class='parameters'>
+      <dt>attribute</dt>
+      <dd>the name of the attribute to pluck</dd>
+   </dl>
+
+   <h3>Description</h3>
+   Iterates over every item in the collection and returns the given attribute
+   value in a new collection for every item.
+   
+   {{ rendering_example "partials/filters/examples/pluck.cadenza" }}
+</section>

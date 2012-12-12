@@ -1,0 +1,3 @@
+{{ people | pluck: "age" | sort | reverse }}
+{{ people | sort: "name" | pluck: "name" }}
+{{ people | sort: "age" | pluck: "name" }}

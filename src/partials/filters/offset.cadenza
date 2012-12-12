@@ -1,0 +1,15 @@
+<section>
+   <h2>offset</h2>
+
+   <h3>Parameters</h3>
+   <dl class='parameters'>
+      <dt>count</dt>
+      <dd>the number of items to skip before copying</dd>
+   </dl>
+
+   <h3>Description</h3>
+   Skips the first <tt>count</tt> items/characters from a collection/string and
+   returns the remainder.
+   
+   {{ rendering_example "partials/filters/examples/offset.cadenza" }}
+</section>

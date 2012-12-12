@@ -1,0 +1,2 @@
+{{ people | pluck: "name" | join: " " }}
+{{ people | pluck: "age" | join: " " }}

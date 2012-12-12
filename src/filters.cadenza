@@ -18,7 +18,11 @@
 	{{ render "partials/filters/join.cadenza" }}
 	{{ render "partials/filters/last.cadenza" }}
 	{{ render "partials/filters/length.cadenza" }}
+	{{ render "partials/filters/limit.cadenza" }}
+	{{ render "partials/filters/offset.cadenza" }}
+	{{ render "partials/filters/pluck.cadenza" }}
 	{{ render "partials/filters/reverse.cadenza" }}
+	{{ render "partials/filters/sort.cadenza" }}
 	{{ render "partials/filters/upper.cadenza" }}
 	{{ render "partials/filters/wordwrap.cadenza" }}
 {% endblock %}

@@ -1,0 +1,17 @@
+<section>
+   <h2>sort</h2>
+
+   <h3>Parameters</h3>
+   <dl class='parameters'>
+      <dt>attribute (optional: default=None)</dt>
+      <dd>the attribute whose value you want to sort by.</dd>
+   </dl>
+
+   <h3>Description</h3>
+   Sorts the items in the given collection in ascending order.  If an attribute
+   is given then the collection will be sorted in ascending order by the value
+   of that attribute.  If you need to sort in descending order then sort using
+   this method and use a <tt>reverse</tt> filter after.
+   
+   {{ rendering_example "partials/filters/examples/sort.cadenza" }}
+</section>

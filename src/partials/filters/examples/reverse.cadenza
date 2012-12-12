@@ -1,2 +1,2 @@
 {{ "Cadenza" | reverse }}
-{{ alphabet | reverse | limit: 5 }}
+{{ alphabet | limit: 5 | reverse | join: " " }}

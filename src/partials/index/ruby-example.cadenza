@@ -4,5 +4,5 @@
 => false
 >> Cadenza.render "Hello {{name}}", :name => "World"
 => "Hello World"  
->> Cadenza.render "Hello {{name}}", :name => "from Cadenza
+>> Cadenza.render "Hello {{name}}", :name => "from Cadenza"
 => "Hello from Cadenza"

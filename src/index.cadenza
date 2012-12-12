@@ -1,8 +1,6 @@
 {% extends "partials/base.cadenza" %}
 {% block title %}Home{% endblock %}
 {% block content %}
-   <h1>Cadenza Templating Language for Ruby</h1>
-
    <section>
       <h2>What is Cadenza?</h2>
       <p>Cadenza is a template language for processing text in a secure

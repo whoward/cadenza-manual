@@ -9,11 +9,13 @@
 		{% block head %}{% endblock %}
 	</head>
 	<body>
-		<div id='logo'>Cadenza</div>
 		<div class='ribbon-holder'>
 			<a href='http://www.github.com/whoward/Cadenza' target="_blank"><span>Fork me on GitHub</span></a>
 		</div>
-		<div id='content'>{% block content %}{% endblock %}</div>
+		<div id='content'>
+			<div id='logo'>cadenza <span>template language for ruby</span></div>
+			{% block content %}{% endblock %}
+		</div>
 		{{ render 'partials/navigation.cadenza' }}
 	</body>
 </html>

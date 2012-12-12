@@ -1,10 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Gravitas+One);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Jim+Nightshade);
 
 body {
    text-align: center;
    
-   font-family: sans-serif;
-   font-size:   14px;
+   font: 16px "Source Sans Pro", sans-serif;
    
    overflow: scroll;
 
@@ -19,22 +18,17 @@ body {
 }
 
 #logo {
-   text-align: left;
-   width: 100%;
-
-   position: fixed;
-   top: 0;
-   left: 50px;
-   font-size: 80px;
+   font: 80px "Jim Nightshade", cursive;
    font-style: italic;
-   font-family: "Gravitas One", cursive;
-   z-index: -1;
+   color: white;
+   text-shadow: 0 4px 8px black;
+   letter-spacing: 4px;
+}
 
-   background-image: -webkit-linear-gradient(top, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
-
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   -webkit-box-reflect: below -45px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
+#logo span {
+   font: 20px "Source Sans Pro", sans-serif;
+   font-weight: bold;
+   text-shadow: 0 0 6px black;
 }
 
 #summary li {
@@ -72,12 +66,11 @@ h1 {
 
 h2 {
    margin: 5px 0px 10px 0px;
-   border-bottom: 2px solid black;
-   
+   border-bottom: 1px solid #666;
    color: orange;
-   
-   font-family: sans-serif;
-   font-size:   2em;
+   font-size: 1.7em;
+   text-shadow: 0 1px 0px #666;
+   letter-spacing: 0.05em;
 }
 
 h3 {
@@ -87,7 +80,7 @@ h3 {
 h4 {
    margin-bottom: 0;
    padding-bottom: 3px;
-   border-bottom: 1px solid black;
+   border-bottom: 1px solid #666;
 }
 
 a, a:visited {
@@ -164,35 +157,45 @@ a, a:visited {
    top: 3em;
    right: -3.5em;
 
-   -moz-box-shadow: 0 0 13px #888;
-   -webkit-box-shadow: 0 0 13px #888;
+   -moz-box-shadow: 0 0 6px #666;
+   -webkit-box-shadow: 0 0 6px #666;
+   -o-box-shadow: 0 0 6px #666;
+   -ms-box-shadow: 0 0 6px #666;
+   box-shadow: 0 0 6px #666;
 
    color: white;
    display: block;
    line-height: 1.35em;
 
-   -moz-transform: rotate(45deg);
    -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
 
-   background: -webkit-gradient(linear, left bottom, left top, from(#DC7202), to(#EE7906));
-   background: -webkit-gradient(linear, left bottom, left top, from(#DC7202), to(#EE7906));
+   background: -webkit-linear-gradient(90deg, #DC7202, #EE7906);
+   background: -moz-linear-gradient(90deg, #DC7202, #EE7906);
+   background: -o-linear-gradient(90deg, #DC7202, #EE7906);
+   background: -ms-linear-gradient(90deg, #DC7202, #EE7906);
+   background: linear-gradient(90deg, #DC7202, #EE7906);
 }
 
 .ribbon-holder span {
    padding: 0.1em 3em;
    border: 1px solid #EBAA65;
+   text-shadow: 0 1px 4px black;
 }
 
 #content {
    width: 800px;
    min-height: 600px;
-   margin: 110px auto 30px auto;
+   margin: 0 auto 30px auto;
    text-align: justify;
 }
 
 tt {
    display: inline-block;
-   padding: 2px;
+   padding: 2px 10px;
    background-color: #DDD;
    border: 1px solid #AAA;
 }
@@ -244,7 +247,7 @@ nav {
    
   position: fixed;
   left: 0;
-  top: 110px;
+  top: 123px;
   
   max-height: 90%;
   

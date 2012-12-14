@@ -1,0 +1,35 @@
+
+.ribbon-holder
+   position: fixed
+   right: 0px
+   top: 0px
+   height: 10em
+
+   a
+      position: relative
+      top: 2.5em
+      right: -3.5em
+
+      display: block
+
+      padding: 0.25em 0
+
+      font-size: 1.25em
+      font-weight: bold
+
+      color: white
+
+      text-decoration: none
+      letter-spacing: -.1px
+      line-height: 1.35em
+      
+      opacity: 0.95
+
+      @include box-shadow(0 0 6px #666)
+      @include rotate(45deg)
+      @include gradient-directional(90deg, #DC7202, #EE7906)
+
+   span
+      padding: 0.1em 3em
+      border: 1px solid #EBAA65
+      @include text-shadow(0 1px 4px black)

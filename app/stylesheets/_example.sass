@@ -1,0 +1,55 @@
+
+.highlight
+   background-color: #272822
+   padding: 3px 10px
+   border-radius: 5px
+   color: white
+   overflow: hidden
+
+.example
+   border: 1px solid #BBB
+   border-radius: 10px
+   padding: 20px
+   clear: both
+   position: relative
+   margin: 20px 0px
+
+   &:before
+      content: "Example:"
+      background-color: white
+      padding: 5px
+      border: 1px solid #BBB
+      border-radius: 10px
+      position: absolute
+      top: -13px
+      left: 20px
+
+   .highlight
+      display: inline-block
+      vertical-align: top
+      width: 310px
+      max-width: 310px
+      overflow-x: auto
+      margin-bottom: 10px
+
+      &:first-child
+         margin-right: 20px
+
+      &:last-child
+         margin-bottom: 0
+
+pre.source, pre.rendered, iframe.rendered
+   background-color: white
+   display: inline-block
+   vertical-align: top
+   max-width: 310px
+   overflow-x: auto
+
+pre.source, pre.rendered
+   background-color: #CCC
+   border: 1px solid #AAA
+   padding: 10px
+   margin: 0
+
+pre.source
+   margin-right: 20px

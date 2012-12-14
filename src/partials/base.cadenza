@@ -2,15 +2,7 @@
 <html>
 	<head>
 		<title>Cadenza: {% block title %}Untitled Page{% endblock %}</title>
-		<script src="resources/modernizr-2.0.6.js"></script>
-		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$("#content nav a[href=\""+window.location.pathname+"\"]").parent().addClass("active");
-			});
-		</script>
-		<link type='text/css' rel='stylesheet' href='resources/style.css'/> 
-		<link type='text/css' rel='stylesheet' href='resources/pygments/sublime.css'/>
+		<link type='text/css' rel='stylesheet' href='/assets/application.css'/>
 		{% block head %}{% endblock %}
 	</head>
 	<body>
@@ -22,5 +14,7 @@
 			{{ render 'partials/navigation.cadenza' }}
 			{% block content %}{% endblock %}
 		</div>
+		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script src="/assets/application.js"></script>
 	</body>
 </html>

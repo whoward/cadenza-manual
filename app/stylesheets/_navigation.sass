@@ -1,0 +1,44 @@
+
+$nav_bgcolor: #048ccc
+$nav_border:  #006798
+
+nav
+   margin-bottom: 10px
+
+   ul
+      list-style: none
+      margin: 0
+      height: 43px
+      padding: 0px 20px 2px 20px
+      border: 1px solid $nav_border
+
+      @include border-radius(10px)
+      @include gradient-horizontal($nav_bgcolor, darken($nav_bgcolor, 5))
+
+      li
+         display: inline-block
+         text-align: center
+         position: relative
+         padding: 4px 10px 4px 10px
+         margin-right: 10px
+         margin-top: 7px
+         border: 1px solid darken($nav_border, 10)
+         background-color: darken($nav_bgcolor, 15)
+
+         @include border-radius(5px)
+         @include transition(background-color 0.25s ease-in-out)
+
+         &:hover, &.active
+            background: lighten($nav_bgcolor, 8)
+            @include box-shadow(inset 0 0 6px #333)
+
+         a
+            font-size: 16px
+            display: block
+            text-decoration: none
+            color: white
+            @include text-shadow(1px 1px 1px black)
+
+            &:active, &:visited
+               color: white
+

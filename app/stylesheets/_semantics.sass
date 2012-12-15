@@ -85,7 +85,9 @@ table
          text-align: center
          border-left: 1px solid gray
          padding: 3px 5px
-         min-width: 100px
+
+         +respond_to(normal)
+            min-width: 100px
 
          &:last-child
             border-right: 1px solid gray
@@ -102,7 +104,9 @@ table
          text-align: center
          border-left: 1px solid gray
          padding: 3px 5px
-         min-width: 100px
+
+         +respond_to(normal)
+            min-width: 100px
 
          &:last-child
             border-right: 1px solid gray

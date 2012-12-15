@@ -1,5 +1,8 @@
 
 body
+   padding: 0
+   margin: 0
+
    text-align: center
    
    font: 16px "Source Sans Pro", sans-serif
@@ -7,12 +10,16 @@ body
    @include gradient-vertical(#499bea, #207ce5)
 
    #content
-      width: 800px
+      width: $content-width
       min-height: 600px
       margin: 0 auto 30px auto
       text-align: left
 
+      +respond_to(narrow)
+         width: 95%
+
    #logo
+      margin-top: 15px
       font: 5em "Jim Nightshade", cursive
       font-style: italic
       color: white
@@ -20,8 +27,31 @@ body
 
       @include text-shadow(0 4px 8px black)
 
+      +respond_to(narrow)
+         text-align: center
+
+      strong
+         display: inline-block
+         vertical-align: baseline
+
+         font-weight: normal
+
+         margin-right: 30px
+
+         +respond_to(narrow)
+            display: block
+            margin: 0
+
       span
+         display: inline-block
+         vertical-align: baseline
+
          font: 0.25em "Source Sans Pro", sans-serif
          font-weight: bold
 
          @include text-shadow(0 0 6px black)
+
+         +respond_to(narrow)
+            display: block
+            position: relative
+            top: -20px

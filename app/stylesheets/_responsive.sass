@@ -1,0 +1,11 @@
+
+$content_width: 800px
+
+=respond_to($device)
+   @if $device == narrow
+      @media only screen and (max-width: $content_width) 
+         @content
+
+   @if $device == normal
+      @media only screen and (min-width: $content_width + 1)
+         @content

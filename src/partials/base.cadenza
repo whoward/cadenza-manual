@@ -2,15 +2,16 @@
 <html>
 	<head>
 		<title>Cadenza: {% block title %}Untitled Page{% endblock %}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 		<link type='text/css' rel='stylesheet' href='/assets/application.css'/>
 		{% block head %}{% endblock %}
 	</head>
 	<body>
-		<div class='ribbon-holder'>
+		<div id='ribbon'>
 			<a href='http://www.github.com/whoward/Cadenza' target="_blank"><span>Fork me on GitHub</span></a>
 		</div>
 		<div id='content'>
-			<div id='logo'>cadenza <span>template language for ruby</span></div>
+			<div id='logo'><strong>cadenza</strong><span>template language for ruby</span></div>
 			{{ render 'partials/navigation.cadenza' }}
 			{% block content %}{% endblock %}
 		</div>

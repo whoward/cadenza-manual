@@ -25,7 +25,7 @@
       as well as languages such as Java which can make use of Cadenza through an 
       embedded interpreter like JRuby or IronRuby.</p>
 
-      <h3>Using Cadenza with Ruby (1.9.x, 1.8.7, Ruby Enterprise Edition)</h3>
+      <h3>Using Cadenza with Ruby</h3>
       <p>In your console run the following command</p>
       <pre>gem install cadenza</pre>
 

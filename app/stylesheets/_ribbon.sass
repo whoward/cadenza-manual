@@ -1,4 +1,6 @@
 
+$ribbon_color: #ee7906
+
 #ribbon
    +respond_to(normal)
       position: fixed
@@ -23,7 +25,7 @@
       opacity: 0.95
 
       @include box-shadow(0 0 6px #666)
-      @include gradient-directional(90deg, #DC7202, #EE7906)
+      @include gradient-vertical(darken($ribbon_color, 5), $ribbon_color)
 
       +respond_to(normal)
          position: relative
@@ -34,7 +36,7 @@
 
    span
       padding: 0.1em 3em
-      border-top: 1px solid #EBAA65
-      border-bottom: 1px solid #EBAA65
+      border-top: 1px solid lighten($ribbon_color, 15)
+      border-bottom: 1px solid lighten($ribbon_color, 15)
       display: block
       @include text-shadow(0 1px 4px black)

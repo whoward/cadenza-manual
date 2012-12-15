@@ -21,4 +21,4 @@ $(document).ready ->
          $("<a/>").attr("href", "##{id}").html(h2.text()).appendTo(item)
 
    # mark the current major tab as active
-   $("#content nav a[href=\"#{window.location.pathname}\"]").parent().addClass("active")
+   $("#content nav a[href=\"#{window.location.pathname}\"]").addClass("active")

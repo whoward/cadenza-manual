@@ -12,5 +12,5 @@
    Iterates over every item in the collection and returns the given attribute
    value in a new collection for every item.
    
-   {{ rendering_example "partials/filters/examples/pluck.cadenza" }}
+   {{ repl_example "partials/filters/examples/pluck.cadenza" }}
 </section>

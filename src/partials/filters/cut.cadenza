@@ -11,5 +11,5 @@
    <h3>Description</h3>
    Removes all <b>values</b> from the string
    
-   {{ rendering_example "partials/filters/examples/cut.cadenza" }}
+   {{ repl_example "partials/filters/examples/cut.cadenza" }}
 </section>

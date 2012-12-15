@@ -8,5 +8,5 @@
 
    <p>Here's an example of comments:</p>
 
-   {{ rendering_example "partials/syntax/examples/comment.cadenza" }}
+   {{ repl_example "partials/syntax/examples/comment.cadenza" }}
 </section>

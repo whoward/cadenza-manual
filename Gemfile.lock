@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/whoward/cadenza.git
-  revision: 2e050451644e1b977a766fba4e08bef7a9c8d1eb
-  ref: 2e050451644e1b977a766fba4e08bef7a9c8d1eb
+  revision: a24b9c3bd313ffc86b5510ffef72df26fdf0d965
+  ref: a24b9c3
   specs:
     cadenza (0.8.0)
       multi_json (>= 1.3.0)

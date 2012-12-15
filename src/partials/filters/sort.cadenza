@@ -13,5 +13,5 @@
    of that attribute.  If you need to sort in descending order then sort using
    this method and use a <tt>reverse</tt> filter after.
    
-   {{ rendering_example "partials/filters/examples/sort.cadenza" }}
+   {{ repl_example "partials/filters/examples/sort.cadenza" }}
 </section>

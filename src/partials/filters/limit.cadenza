@@ -10,5 +10,5 @@
    <h3>Description</h3>
    Takes the first <tt>length</tt> items/characters from the collection/string and removes the remainder.
    
-   {{ rendering_example "partials/filters/examples/limit.cadenza" }}
+   {{ repl_example "partials/filters/examples/limit.cadenza" }}
 </section>

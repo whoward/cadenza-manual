@@ -7,5 +7,5 @@
    <h3>Description</h3>
    Reverses the input string or collection 
    
-   {{ rendering_example "partials/filters/examples/reverse.cadenza" }}
+   {{ repl_example "partials/filters/examples/reverse.cadenza" }}
 </section>

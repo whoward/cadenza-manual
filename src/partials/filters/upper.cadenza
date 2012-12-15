@@ -7,5 +7,5 @@
    <h3>Description</h3>
    Converts the entire string to uppercase.
    
-   {{ rendering_example "partials/filters/examples/upper.cadenza" }}
+   {{ repl_example "partials/filters/examples/upper.cadenza" }}
 </section>

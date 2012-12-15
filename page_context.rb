@@ -58,6 +58,20 @@ def rendering_example(context, template)
   result
 end
 
+def repl_example(context, template)
+  lines = context.evaluate_functional_variable("load", [template]).split(/\n/)
+
+  source = lines.inject("") do |output, line|
+    ast = Cadenza::Parser.new.parse(line)
+    result = Cadenza::TextRenderer.render(ast, context).gsub(/\n/, "\n=> ")
+
+    output << ">> #{line}\n"
+    output << "=> #{result}\n"
+  end
+
+  Pygments.highlight(source, :lexer => "html+django")
+end
+
 whiny_template_loading = true
 
 add_loader Cadenza::FilesystemLoader.new(view_directory)
@@ -87,5 +101,6 @@ define_functional_variable :ruby_example, &method(:ruby_example)
 define_functional_variable :irb_example, &method(:irb_example)
 define_functional_variable :rendering_example, &method(:rendering_example)
 define_functional_variable :cadenza_example, &method(:cadenza_example)
+define_functional_variable :repl_example, &method(:repl_example)
 
 define_block :code_example, &method(:code_example)

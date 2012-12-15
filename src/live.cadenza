@@ -1,18 +1,22 @@
 {% extends "partials/base.cadenza" %}
-{% block title %}Try Cadenza Online{% endblock %}
-{% block head %}
-   <script src="markitup/jquery.markitup.js"></script>
-   <script src="markitup/sets/html/set.js"></script>
 
+{% block title %}Try Cadenza Online{% endblock %}
+
+{% block head %}
    <link rel="stylesheet" type="text/css" href="markitup/skins/markitup/style.css" />
    <link rel="stylesheet" type="text/css" href="markitup/sets/html/style.css" />
+{% endblock %}
 
+{% block javascript %}
+   <script src="markitup/jquery.markitup.js"></script>
+   <script src="markitup/sets/html/set.js"></script>
    <script type="text/javascript" >
       $(document).ready(function() {
          $("textarea[name=template]").markItUp(mySettings);
       });
    </script>
 {% endblock %}
+
 {% block content %}
    <section>
       <form action="/render" method="post" target="result">

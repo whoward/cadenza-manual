@@ -11,5 +11,5 @@
    Skips the first <tt>count</tt> items/characters from a collection/string and
    returns the remainder.
    
-   {{ rendering_example "partials/filters/examples/offset.cadenza" }}
+   {{ repl_example "partials/filters/examples/offset.cadenza" }}
 </section>

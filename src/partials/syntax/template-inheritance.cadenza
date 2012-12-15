@@ -44,14 +44,16 @@
   <h3>Example: Rendered documents</h3>
 
   <h4>home.html</h4>
-  <div class='example-without-label'>
+  <div>
     {{ cadenza_example "iframe/home.cadenza" }}
+    <br/>
     <iframe src="iframe/home.html" class='rendered'></iframe>
   </div>
 
   <h4>about.html</h4>
-  <div class='example-without-label'>
+  <div>
     {{ cadenza_example "iframe/about.cadenza" }}
+    <br/>
     <iframe src="iframe/about.html" class='rendered'></iframe>
   </div>
 

@@ -6,7 +6,7 @@ section, h1
    border: 3px solid rgb(237, 239, 244)
    border: 3px solid rgba(237, 239, 244, 1)
 
-   padding: 10px 30px
+   padding: 10px 30px 30px 30px
 
    margin-bottom: 20px
 
@@ -38,12 +38,6 @@ a, a:visited, a:active
 
 tt
    font-family: courier
-
-// tt
-//    display: inline-block
-//    padding: 2px 5px
-//    background-color: #DDD
-//    border: 1px solid #AAA
 
 dt
    display: inline-block
@@ -91,6 +85,7 @@ table
          text-align: center
          border-left: 1px solid gray
          padding: 3px 5px
+         min-width: 100px
 
          &:last-child
             border-right: 1px solid gray
@@ -107,6 +102,7 @@ table
          text-align: center
          border-left: 1px solid gray
          padding: 3px 5px
+         min-width: 100px
 
          &:last-child
             border-right: 1px solid gray
@@ -120,21 +116,5 @@ table
 .clear
    clear: both
 
-table.scrollable
-   display: block
-
-   tbody
-      max-height: 300px
-      display: block
-      overflow-y: auto
-
-   td, th
-      max-width: 120px
-      min-width: 120px
-      text-overflow: ellipsis
-      overflow-x: hidden
-
-dl.parameters
-   margin: 0
-   position: relative
-   top: -15px
+.centered
+   margin: auto

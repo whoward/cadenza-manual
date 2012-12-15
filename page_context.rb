@@ -61,11 +61,19 @@ end
 def repl_example(context, template)
   lines = context.evaluate_functional_variable("load", [template]).split(/\n/)
 
+  while idx = lines.index("---")
+    squash = lines[0..idx-1].join("\n")
+
+    lines = [squash] + lines[idx+1..-1]
+  end
+
   source = lines.inject("") do |output, line|
     ast = Cadenza::Parser.new.parse(line)
     result = Cadenza::TextRenderer.render(ast, context).gsub(/\n/, "\n=> ")
 
-    output << ">> #{line}\n"
+    output_line = line.gsub(/\n/, "\n>> ")
+
+    output << ">> #{output_line}\n"
     output << "=> #{result}\n"
   end
 

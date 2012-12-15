@@ -30,15 +30,15 @@
    rendered.  If the expression evaluates to true then the first block will
    be rendered:</p>
 
-   {{ rendering_example "partials/syntax/examples/if-statements3.cadenza" }}
+   {{ repl_example "partials/syntax/examples/if-statements3.cadenza" }}
 
    <p>When the expression evaluates to false then the second block will be 
    rendered:</p>
 
-   {{ rendering_example "partials/syntax/examples/if-statements4.cadenza" }}
+   {{ repl_example "partials/syntax/examples/if-statements4.cadenza" }}
 
    <p>Of course, if no <tt>{{ "{% else %}" }}</tt> block is provided and the
    expression evaluates to false then nothing will be rendered at all:</p>
 
-   {{ rendering_example "partials/syntax/examples/if-statements5.cadenza" }}
+   {{ repl_example "partials/syntax/examples/if-statements5.cadenza" }}
 </section>

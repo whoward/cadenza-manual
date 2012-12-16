@@ -5,7 +5,7 @@
    <tt>None</tt>
 
    <h3>Description</h3>
-   Returns the length of a value
+   <p>Returns the length of a value</p>
    
    {{ repl_example "partials/filters/examples/length.cadenza" }}
 </section>

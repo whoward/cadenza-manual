@@ -9,7 +9,7 @@
    </dl>
 
    <h3>Description</h3>
-   Removes all <b>values</b> from the string
+   <p>Removes all <b>values</b> from the string</p>
    
    {{ repl_example "partials/filters/examples/cut.cadenza" }}
 </section>

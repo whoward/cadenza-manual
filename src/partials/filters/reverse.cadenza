@@ -5,7 +5,7 @@
    <tt>None</tt>
 
    <h3>Description</h3>
-   Reverses the input string or collection 
+   <p>Reverses the input string or collection.</p>
    
    {{ repl_example "partials/filters/examples/reverse.cadenza" }}
 </section>

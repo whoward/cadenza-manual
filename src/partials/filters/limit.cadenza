@@ -8,7 +8,7 @@
    </dl>
 
    <h3>Description</h3>
-   Takes the first <tt>length</tt> items/characters from the collection/string and removes the remainder.
+   <p>Takes the first <tt>length</tt> items/characters from the collection/string and removes the remainder.</p>
    
    {{ repl_example "partials/filters/examples/limit.cadenza" }}
 </section>

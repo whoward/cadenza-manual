@@ -5,7 +5,7 @@
    <tt>None</tt>
 
    <h3>Description</h3>
-   Adds C style backslashes before quotes.  Usually used for CSV output, not for JavaScript.
+   <p>Adds C style backslashes before quotes.  Usually used for CSV output, not for JavaScript.</p>
 
    {{ repl_example "partials/filters/examples/addslashes.cadenza" }}
 </section>

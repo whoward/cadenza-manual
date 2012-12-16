@@ -11,9 +11,10 @@
    </dl>
 
    <h3>Description</h3>
-   Takes long text and forces a line break every <b>number</b> of given 
+   <p>Takes long text and forces a line break every <b>number</b> of given 
    characters.  The type of line break is specified by the optional 
-   <b>separator</b>.  Gives a nice column effect which is very useful on fixed width fonts.
+   <b>separator</b>.  Gives a nice column effect which is very useful on fixed 
+   width fonts.</p>
 
    {{ repl_example "partials/filters/examples/wordwrap.cadenza" }}
 </section>

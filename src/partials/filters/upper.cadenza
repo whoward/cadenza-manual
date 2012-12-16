@@ -5,7 +5,7 @@
    <tt>None</tt>
 
    <h3>Description</h3>
-   Converts the entire string to uppercase.
+   <p>Converts the entire string to uppercase.</p>
    
    {{ repl_example "partials/filters/examples/upper.cadenza" }}
 </section>

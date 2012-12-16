@@ -1,6 +1,7 @@
 
 # generator function to get a unique ID for the page
 uniqueId = -> "_id#{uniqueId.counter++}"
+uniqueId.counter = 0
 
 $(document).ready ->
    

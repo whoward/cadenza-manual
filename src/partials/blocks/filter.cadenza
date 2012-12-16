@@ -8,8 +8,8 @@
    </dl>
 
    <h3>Description</h3>
-   Applies any filter that is defined on the current context to all the contents
-   of the rendered block.
+   <p>Applies any filter that is defined on the current context to all the contents
+   of the rendered block.</p>
 
    {{ repl_example "partials/blocks/examples/filter.cadenza" }}
 </section>

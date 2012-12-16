@@ -8,8 +8,8 @@
    </dl>
 
    <h3>Description</h3>
-   Loads the given filename and injects it into the rendered template without
-   performing any parsing or rendering.
+   <p>Loads the given filename and injects it into the rendered template without
+   performing any parsing or rendering.</p>
 
    {{ repl_example "partials/variables/examples/load.cadenza" }}
 </section>

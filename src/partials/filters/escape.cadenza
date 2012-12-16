@@ -5,7 +5,7 @@
    <tt>None</tt>
 
    <h3>Description</h3>
-   Performs HTML escaping on the value.  Specifically replaces &, ", <, and > with their HTML special character equivalents.
+   <p>Performs HTML escaping on the value.  Specifically replaces &, ", <, and > with their HTML special character equivalents.</p>
    
    {{ repl_example "partials/filters/examples/escape.cadenza" }}
 </section>

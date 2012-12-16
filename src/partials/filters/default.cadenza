@@ -8,7 +8,7 @@
    </dl>
 
    <h3>Description</h3>
-   Uses the <b>default_value</b> passed instead of the value is nil, empty or evaluates to false. 
+   <p>Uses the <b>default_value</b> passed instead of the value is nil, empty or evaluates to false.</p>
    
    {{ repl_example "partials/filters/examples/default.cadenza" }}
 </section>

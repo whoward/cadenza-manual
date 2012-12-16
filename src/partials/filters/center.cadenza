@@ -11,9 +11,9 @@
    </dl>
 
    <h3>Description</h3>
-   Centers a string in a string of length <b>length</b>.  If the string is 
+   <p>Centers a string in a string of length <b>length</b>.  If the string is 
    longer than <b>length</b> no extra padding will be added.  <b>padding 
-   string</b> specifies which string shall be used to center the string.
+   string</b> specifies which string shall be used to center the string.</p>
    
    {{ repl_example "partials/filters/examples/center.cadenza" }}
 </section>

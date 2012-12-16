@@ -8,9 +8,9 @@
    </dl>
 
    <h3>Description</h3>
-   Formats a date value according to the <b>format</b>.  The <b>format</b> uses strftime, common to many
+   <p>Formats a date value according to the <b>format</b>.  The <b>format</b> uses strftime, common to many
    languages - such as PHP.  See the documentation <a href='http://php.net/manual/en/function.strftime.php'>there</a>
-   for specifics on the format. 
+   for specifics on the format.</p>
    
    {{ repl_example "partials/filters/examples/date.cadenza" }}
 </section>

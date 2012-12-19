@@ -1,1 +1,1 @@
-context.add_loader Cadenza::FilesystemLoader.new("path/to/view_directory")
+context.add_loader Cadenza::FilesystemLoader.new("path/to/views")

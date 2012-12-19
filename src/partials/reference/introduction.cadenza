@@ -7,8 +7,8 @@
 
    <p>The lexer takes an input file and converts it into a list of useful tokens
    which the parser can use.  The parser will in turn convert these tokens into 
-   an Abstract Syntax Tree (AST) which can be used by the renderer.  The renderer
-   finally uses a Context and an AST to create the rendered template.</p>
+   an Abstract Syntax Tree (AST) which can be used by the renderer.  Finally, 
+   the renderer uses a Context and an AST to create the rendered template.</p>
 
    <div style='text-align: center;'><img src='resources/stack.png'/></div>
 

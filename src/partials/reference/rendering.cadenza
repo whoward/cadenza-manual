@@ -1,13 +1,34 @@
 <section>
    <h2>Rendering</h2>
    <p>Rendering is the process of converting an AST to an output template using
-   an instance of <tt>Cadenza::Context</tt>.  The renderer included with Cadenza
-   is <tt>Cadenza::TextRenderer</tt> which renders the AST to a text document
-   (other renderers may, for example, render to a JSON file or other interesting
-   targets).</p>
+   an instance of <tt>Cadenza::Context</tt>.</p>
 
-   <p>Renderers must be instantiated with an IO object used for writing output
-   to.  This IO object should already be opened and ready for writing.</p>
+   <p>The current version of Cadenza includes two renderer classes intended for
+   two entirely different use cases.</p>
+
+   <dl>
+      <dt>Cadenza::TextRenderer</dt>
+      <dd>
+         <p>The most important renderer class which handles the rendering of a 
+         Cadenza AST in the fashion discussed in the <a href='/syntax.html'>Syntax</a>
+         section of this manual.</p>
+      </dd>
+
+      <dt>Cadenza::SourceRenderer</dt>
+      <dd>
+         <p>An experimental renderer implemented in Cadenza 0.8, this renderer
+         takes a Cadenza AST and outputs template source code.  In other words,
+         it outputs a document that can be parsed again into the same Cadenza 
+         AST.</p>
+
+         <p>Among other use cases you may find this renderer useful when 
+         performing upgrades and migrations to templates in your projects.</p>
+      </dd>
+   </dl>
+
+   <p>Renderers must be instantiated with an IO object which will be written to
+   during the rendering process.  This object should already be opened and ready
+   for writing when the class is instantiated.</p>
 
    {{ ruby_example "partials/reference/examples/rendering.cadenza" }}
 
@@ -21,8 +42,9 @@
 
    {{ ruby_example "partials/reference/examples/rendering3.cadenza" }}
 
-   <p><tt>Cadenza::TextRenderer</tt> also features a class level shorthand to
-   render a given AST and context to a string which will be returned</p>
+   <p>All of the renderer classes included with Cadenza also feature a class 
+   level shorthand method to render a given AST and context and return the output
+   as a string.</p>
 
    {{ ruby_example "partials/reference/examples/rendering4.cadenza" }}
 </section>

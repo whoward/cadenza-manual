@@ -23,15 +23,11 @@
 
    {{ ruby_example "partials/reference/examples/context-loaders3.cadenza" }}
 
-   <p>Cadenza includes the following loaders:</p>
+   <p>Cadenza includes the following loader implementations:</p>
 
    <dl class='parameters'>
       <dt>Cadenza::FilesystemLoader</dt>
       <dd>Loads templates directly off of the filesystem from a specified 
       directory.</dd>
-
-      <dt>Cadenza::ZipLoader (TODO: not yet written)</dt>
-      <dd>Loads templates from within a specified zip file.  To use this the 
-      <tt>rubyzip</tt> gem is also required.</dd>
    </dl>
 </section>

@@ -1,7 +1,7 @@
 <section>
    <h2>Contexts</h2>
-   <p>Contexts are managed by the <tt>Cadenza::Context</tt> class contain all 
-   the variable information used when rendering the template, including:</p>
+   <p>Contexts are managed by the <tt>Cadenza::Context</tt> class which contains
+   all the information used when rendering the template, including:</p>
 
    <ul>
       <li>Variables</li>
@@ -11,12 +11,13 @@
       <li>Loaders</li>
    </ul>
 
-   <p>Cadenza includes a constant named <tt>Cadenza::BaseContext</tt> which was 
-   intended, as a convention, to be cloned each time you want to render a 
-   template.  Of course, for maximum control, you do not have to do this.</p>
+   <p>Cadenza includes a constant named <tt>Cadenza::BaseContext</tt> which is an
+   instance of <tt>Cadenza::Context</tt> that includes the Cadenza standard library
+   of filters, blocks and functional variables.</p>
 
-   <p>The purpose of this convention is to allow other developers to mix in their 
-   own filters, blocks, loaders, etc. to provide more power to your templates.  
-   For example a gem which mixes Cadenza and Ruby on Rails would likely define a
-   number of Rails specific filters, variables, etc.</p>
+   <p>While you are free to implement a set of these filters, blocks and 
+   functional variables yourself by creating your own instance of 
+   <tt>Cadenza::Context</tt> it is suggested you clone <tt>Cadenza::BaseContext</tt> 
+   instead by calling <tt>Cadenza::BaseContext.clone</tt> and use that as the 
+   starting point for creating your own context.</p>
 </section>

@@ -3,14 +3,19 @@
 
    <p>You can define filters by calling the context object's <tt>#define_filter</tt> 
    method with the name of the filter and an object which responds to <tt>#call</tt>, 
-   such as a <tt>Proc</tt>, <tt>lambda</tt> or a <tt>block</tt>.</p>
+   such as a <tt>Proc</tt>, <tt>lambda</tt> or by passing a block.</p>
 
    {{ ruby_example "partials/reference/examples/context-filters.cadenza" }}
 
    <p>When evaluating the filter the passed callable object will be called with
-   a variable number of arguments.  The first argument will always be the input
-   string object.  The remaining arguments will be the parameters the filter is 
-   being evaluated with.</p>
+   exactly two arguments.  The first argument will always be the input object, 
+   which may be any type of ruby object.  The remaining arguments will be the 
+   parameters the filter is being evaluated with.</p>
+
+   <p>It is suggested you do type checking inside your filter to ensure you're 
+   not passed unexpected data (duck type checking can be used as well).  If you 
+   are passed unexpected data you should raise an error which is a subclass of 
+   <tt>Cadenza::Error</tt>.</p>
 
    <p>To evaluate a filter call the <tt>#evaluate_filter</tt> method on the context
    object, passing the name of the filter and an array of the parameters for it:</p>

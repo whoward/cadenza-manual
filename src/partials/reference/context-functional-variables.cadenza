@@ -4,11 +4,11 @@
    <p>You can define functional variables by calling the context object's
    <tt>#define_functional_variable</tt> method with the name of the variable and
    an object which responds to <tt>#call</tt>, such as a <tt>Proc</tt>, 
-   <tt>lambda</tt> or a <tt>block</tt>.</p>
+   <tt>lambda</tt> or by passing a block.</p>
 
    {{ ruby_example "partials/reference/examples/context-fvar.cadenza" }}
 
-   <p>When evaluating the variable the passed callable object will be called with
+   <p>When evaluating the function the passed callable object will be called with
    a variable number of arguments.  The first argument will always be the context
    object.  The remaining arguments will be the parameters the variable is being
    evaluated with.</p>

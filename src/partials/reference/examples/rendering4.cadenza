@@ -1,1 +1,2 @@
 Cadenza::TextRenderer.render(document, Cadenza::BaseContext.clone)
+Cadenza::SourceRenderer.render(document, Cadenza::BaseContext.clone)

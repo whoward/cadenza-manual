@@ -1,3 +1,3 @@
-context.define_filter :foo do |input|
+context.define_filter :foo do |input, parameters|
    # do something here and return the result
 end

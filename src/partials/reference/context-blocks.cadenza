@@ -3,15 +3,16 @@
 
    <p>You can define blocks by calling the context object's <tt>#define_block</tt> 
    method with the name of the block and an object which responds to <tt>#call</tt>, 
-   such as a <tt>Proc</tt>, <tt>lambda</tt> or a <tt>block</tt>.</p>
+   such as a <tt>Proc</tt>, <tt>lambda</tt> or by passing a block.</p>
 
    {{ ruby_example "partials/reference/examples/context-blocks.cadenza" }}
 
    <p>When evaluating the block the passed callable object will be called with
-   a variable number of arguments.  The first argument will always be the context
+   a exactly three arguments.  The first argument will always be the context
    object.  The second argument will be an Array of Node objects which are the 
    block's parsed children, it is up to the callable to render these as it sees fit.
-   The remaining arguments will be the parameters the block is being evaluated with.</p>
+   The final argument will be an array which are the parameters passed to the 
+   block.</p>
 
    <p>To evaluate a block call the <tt>#evaluate_block</tt> method on the context
    object, passing the name of the block, an array of nodes (the block's children),

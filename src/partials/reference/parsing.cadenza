@@ -9,7 +9,7 @@
 
    <p>By default constructing the Parser object will have it use a new instance
    of <tt>Cadenza::Lexer</tt> to process the input but by passing the
-   <tt>:lexer</tt> option to the constructor you can use any custom lexer 
+   <tt>:lexer</tt> option to the constructor you can use any custom scanner 
    instead:</p>
 
    {{ ruby_example "partials/reference/examples/parsing2.cadenza" }}

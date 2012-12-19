@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'cadenza', github: "whoward/cadenza", :ref => "a24b9c3"
+gem 'cadenza', '0.8.0'
 
 gem 'sinatra'
 gem 'pygments.rb'

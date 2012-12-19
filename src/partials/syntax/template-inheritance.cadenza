@@ -30,6 +30,10 @@
   content which has the same name.  If there is no content in the child then
   whatever you've put in the layout's block will be rendered instead.</p>
 
+  <p>Inside a block there is also a magic variable defined named <tt>super</tt>.
+  This variable can be used to insert the parent block's content inside the child
+  block's content.</p>
+
   <h3>Example: Input documents</h3>
    
   <h4>partials/layout.cadenza</h4>
@@ -44,17 +48,9 @@
   <h3>Example: Rendered documents</h3>
 
   <h4>home.html</h4>
-  <div>
-    {{ cadenza_example "iframe/home.cadenza" }}
-    <br/>
-    <iframe src="iframe/home.html" class='rendered'></iframe>
-  </div>
+  <iframe src="iframe/home.html" class='rendered'></iframe>
 
   <h4>about.html</h4>
-  <div>
-    {{ cadenza_example "iframe/about.cadenza" }}
-    <br/>
-    <iframe src="iframe/about.html" class='rendered'></iframe>
-  </div>
+  <iframe src="iframe/about.html" class='rendered'></iframe>
 
 </section>

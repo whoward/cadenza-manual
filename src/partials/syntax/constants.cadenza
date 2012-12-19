@@ -1,13 +1,11 @@
 <section>
-   <h2 id="constants">Constants</h2>
+   <h2 id="literals">Literals</h2>
 
-   <p>Constants are values which do not change or represent some value, like
-   variables do.  Constants can either be a number or a string.  Constants can
-   only be used inside an inject tag or a control tag - outside of these tags 
-   they are just treated as text.</p>
+   <p>Literals are constant values that you can use inside your template tags.
+   In Cadenza literals can be either a <b>number</b> or a <b>string</b>.</p>
      
    <h4>Numbers</h4>
-   <p>Numbers are any integer or real.</p>
+   <p>Numbers are any integer or real numerical value.</p>
    {{ repl_example "partials/syntax/examples/numbers.cadenza" }}
 
    <h4>Strings</h4>

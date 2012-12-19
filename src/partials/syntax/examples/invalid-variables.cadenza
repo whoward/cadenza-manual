@@ -1,2 +1,5 @@
+{# invalid because it starts with a digit #}
 {{ 9abc }}
+
+{# invalid because it contains a hyphen #}
 {{ foo-bar }}

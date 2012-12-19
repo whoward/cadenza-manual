@@ -1,9 +1,8 @@
 <section>
   <h2 id="inject">Inject tags</h2>
 
-  <p>Inject tags allow you to insert variables into your template and optionally
-  apply some filters to them before they are injected.  An inject tag generally
-  looks something like this:</p>
+  <p>Inject tags are used to insert values into your template while rendering.
+  An inject tag generally looks something like this:</p>
     
   {{ cadenza_example "partials/syntax/examples/inject0.cadenza" }}
 
@@ -14,16 +13,23 @@
   {{ cadenza_example "partials/syntax/examples/inject1.cadenza" }}
 
   <p>When you do want to use a filter just insert a pipe character <tt>|</tt>
-  and then give the name of your filter.  If you're wondering what filters are
+  and then give the name of your filter.</p>
+
+  <p>Filters can actually be applied to any value inside a inject tag or a 
+  control tag so the following is a valid tag:</p>
+
+  {{ cadenza_example "partials/syntax/examples/inject4.cadenza" }}
+
+  <p>If you're wondering what filters are
   available then you can have a look at the <a href='filters.html'>standard filter
   reference</a>.  When using Cadenza, programmers can also write custom filters
   for you to use, for information about writing custom filters consult the
   <a href='reference.html'>programmer's reference</a>.</p>
 
-  <p>Some filters take a list of <b>parameters</b> which change the way they
-  work.  When providing parameters add a colon <tt>:</tt> to the end of your 
-  filter name and then give your parameters separated by commas <tt>,</tt>.
-  Here's some examples: </p>
+  <p>As seen above some filters take a list of <b>parameters</b> which change 
+  the way they work.  When providing parameters add a colon <tt>:</tt> to the 
+  end of your  filter name and then give your parameters separated by commas.
+  Here are some examples: </p>
   
   {{ repl_example "partials/syntax/examples/inject2.cadenza" }}
 
@@ -31,7 +37,7 @@
   each time you call them you may get a different result.  These variables are
   called <b>functional variables</b>.  Functional variables can also take a list
   of parameters which can further modify the result.  For example, the <tt>load</tt>
-  function will insert the text from another file without rendering it:</p>
+  function will insert the text from another template without rendering it:</p>
 
   {{ repl_example "partials/syntax/examples/inject3.cadenza" }}
 

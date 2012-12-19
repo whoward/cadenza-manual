@@ -1,0 +1,15 @@
+{#
+   this very crazy example could be used to center the name in spaces
+   with padding equal to the largest name.  Example:
+
+   -------
+   Stephen
+    Mike 
+     Ben
+   Michael
+   -------
+
+   Most of the time your tags shouldn't have to get this complicated 
+   however :)
+#}
+{{ name | center: (names | map: "length" | sort | reverse | limit: 1) }}

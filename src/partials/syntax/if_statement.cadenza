@@ -9,10 +9,10 @@
      
    {{ cadenza_example "partials/syntax/examples/if-statements1.cadenza" }}
    
-   <aside class='right'>
+   <aside style='margin-top: 1.4em;'>
       <div><b>true</b> and <b>false</b> are called boolean values.  This sounds 
       complicated but really all what boolean values are is the result of 
-      evaluating some kind of logic.</div>
+      evaluating some kind of statement to a "truthy" value.</div>
       <br/>
       <div>For example if I said "the current year is 1985" then my statement 
       would be <b>false</b>, however, if I said "the year 1985 is in the past" 

@@ -14,6 +14,12 @@
     to learn any HTML before I'd suggest learning the basics as it's a very easy
     language to learn and this document will probably make more sense after you 
     have had a chance to do so.</p>
+
+    <p>As well, this document discusses the standard Cadenza rendering stack.
+    For developers this means using the <tt>Cadenza::Lexer</tt>, 
+    <tt>Cadenza::Parser</tt> and <tt>Cadenza::TextRenderer</tt> classes which are
+    included in the standard Cadenza library.  Depending on how your system is
+    set up the details discussed in this document may not apply.</p>
   </section>
     
   {{ render "partials/syntax/basics.cadenza" }}

@@ -1,4 +1,4 @@
-source :rubygems
+source "https://www.rubygems.org"
 
 gem 'cadenza', '0.8.0'
 

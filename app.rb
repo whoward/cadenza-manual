@@ -1,4 +1,4 @@
-require 'yajl'
+require 'json'
 require 'cadenza'
 require 'cgi'
 
@@ -22,7 +22,7 @@ class CadenzaManual < Sinatra::Base
    end
 
    post '/render' do
-      context = Yajl::Parser.new(:symbolize_keys => true).parse(params[:context]) rescue nil
+      context = JSON.parse(params[:context]) rescue nil
 
       template = params[:template]
 
